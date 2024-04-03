@@ -1,0 +1,45 @@
+.stack-Style {
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.wrapper {
+    background: linear-gradient(to bottom right, #506aa3, #5385e3);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex; /* Added to align items center vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.login-btn {
+    border-radius: 10px;
+    width: 14em;
+    padding: 12px;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #6b6b6b;
+    display: flex; /* Ensure flex properties apply */
+    justify-content: space-around; /* Space around items inside the button */
+    align-items: center; /* Center items vertically inside the button */
+    cursor: pointer; /* Change mouse cursor on hover over the button */
+    background-color: #fff; /* Add a background color to the button */
+    border: none; /* Remove border */
+}
+
+/* The .button-icon class is commented out in JSX, so it's omitted here */
+
+.btn-text {
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #6b6b6b;
+}
+
+.bot-Style {
+    width: 10%;
+    margin-right: 8px; /* Adjust spacing between icon and text if necessary */
+}

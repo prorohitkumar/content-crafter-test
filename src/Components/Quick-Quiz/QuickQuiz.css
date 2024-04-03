@@ -1,0 +1,168 @@
+
+.form-qq {
+  width: 100%;
+  padding: 10px 20px;
+  padding-top: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-shadow: 5px 0px 10px 5px#ccc;
+}
+
+.form-table-qq {
+  width: 500px;
+  display: table;
+}
+
+.form-row-qq {
+  display: table-row;
+  align-items: center;
+  /* text-align: center; */
+  /* margin-left: 30px; */
+  margin-top: 5px;
+}
+
+.form-cell-qq {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.input_numOfQuestions {
+  width: 500px;
+}
+
+.form-cell-qqinput[type='number'],
+select {
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.heading-container {
+  /* min-width: 50%; */
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  text-align: center;
+  height: 10vh;
+}
+
+.content-container {
+  margin-left: 250px;
+  display: flex;
+  max-width: 70%;
+  padding: 0;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.form-container,
+.response-container {
+  /* width: 80%; */
+  flex: 1;
+  padding: 30px;
+}
+
+.wmde-markdown {
+  margin: 0px;
+}
+
+.response-container {
+  max-height: 90%;
+  width: 750px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  overflow: auto;
+  /* background-color: red; */
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .form-row {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+} */
+
+.form-row input[type='number'],
+.form-row select {
+  flex-basis: 20%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-button-container {
+  /* width: 4px; */
+  margin-top: 10px;
+}
+
+/* .add-row-button, */
+.submit-btn-container button {
+  background-color: #2980b9;
+  color: white;
+  padding: auto;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-row-button {
+  width: 50px;
+}
+
+.submit-btn-container button {
+  width: 20%;
+  margin: 20px auto;
+  margin-left: 71%;
+  /* background-color: red; */
+}
+
+.markdown{
+  background-color: rebeccapurple;
+  height: 200px;
+}
+
+
+/* .add-row-button :disabled{
+  background-color: black;
+} */
+
+.add-row-button.disabled {
+  background-color: lightblue; /* Change to your desired background color */
+  cursor: not-allowed; /* Optional: Change cursor style */
+}
+
+.error {
+  /* margin-left: 10px; */
+  color: #ff0000; /* Red color for error messages */
+  margin-top: 5px; /* Space above the error message */
+  /* margin-bottom: 15px; Space below the error message */
+  font-size: 0.875em; /* Smaller font size for error text */
+  font-weight: bold; /* Make the error text bold */
+}
+
+
+.buttons{
+  display: flex;
+}
+
+

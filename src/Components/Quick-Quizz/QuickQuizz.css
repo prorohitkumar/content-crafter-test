@@ -1,0 +1,133 @@
+.quick-quizz-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-portion,
+.right-portion {
+  flex: 1;
+}
+
+.quick-header {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  padding-bottom: 0;
+  margin-top: 1.25rem;
+}
+/* QuickQuizz.css */
+
+/* Update font color and style for dropdown values */
+.MuiMenuItem-root {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(97, 97, 97);
+}
+
+.back-button {
+  background: #0061af;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  width: auto; /* Set to auto to allow content to dictate the size */
+  min-width: 2.2rem; /* Set a min-width if needed */
+  text-align: center; /* Ensures the text is centered */
+  /* Use a font library or SVG icon for the back arrow for a better look */
+  display: inline-block; /* Change display to inline-block to control width */
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0.625rem; /* Set the gap between the button and the text to 0.625rem */
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.quick-quizz-container {
+  display: flex;
+  height: 100%; /* Make sure the container fills the height of its parent */
+}
+
+.right-portion {
+  flex-grow: 1; /* Make this portion grow to fill the available space */
+}
+
+.error-message {
+  margin-top: 1%;
+  margin-left: 1%;
+
+  color: red;
+}
+
+.response {
+  border: 0.125rem solid grey; /* You can adjust the border width and color */
+  margin-top: 10%; /* Adjust the margin as needed */
+  padding: 0.625rem; /* Add some padding to the response */
+  height: 43.75rem; /* Make sure the response fills the height of its parent */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.response-content {
+  margin-top: 3%;
+  background-color: white;
+  color: #000000;
+}
+
+.welcome {
+  animation: fadeIn 2s;
+  font-size: 1.5rem;
+  color: rgb(97, 97, 97);
+  text-align: center;
+  margin-top: 9%;
+  /* font-weight: bold; */
+}
+
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.card {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 9);
+  width: 90%; /* Adjust the width as needed to decrease the size */
+  margin: auto; /* This will center the card horizontally */
+  align-self: center; /* This will center the card vertically */
+  margin-top: 6%; /* Adjust the margin as needed */
+  transition: all 0.3s ease; /* Optional: adds a smooth transition effect */
+}
+
+.left-portion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: flex-start; /* Aligns content to the left */
+  height: 100vh; /* Take up full height of the viewport */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns button to the right */
+  margin-top: 1.25rem; /* Add margin as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quick-quizz-container {
+    flex-direction: column;
+  }
+
+  .left-portion,
+  .right-portion {
+    width: 100%;
+  }
+}

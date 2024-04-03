@@ -1,0 +1,117 @@
+home-page {
+  padding: 20px;
+}
+
+/* .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+} */
+
+.search-bar {
+  width: 100vh;
+  margin: 0 auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh; /* This will center the SearchBar */
+}
+
+.card-hover:hover {
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.625rem);
+  transition: all 0.3s ease;
+}
+
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 8vh;
+  /* margin-left: 3vh;
+  margin-right: 0vh; */
+  row-gap: 2vh;
+  position: relative;
+}
+
+.card-home {
+  border: 1px solid #ccc;
+background-color: rgb(239, 237, 233);
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(50% - 10px); /* Adjust the width as needed */
+  max-width: 40vh;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.9);
+  height: 37vh; /* Set a fixed height for the cards */
+  /* Adjust the height as needed */
+}
+
+.card-img-top {
+  width: 19vh;
+  height: 17vh;
+  object-fit: cover;
+  display: block;
+  margin:  auto;
+  margin-top: 1vh;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.6vh;
+  position: relative;
+}
+
+.card-text {
+  font-size: 2.3vh;
+  position: relative;
+
+}
+
+.custom-btn-container {
+  position: relative; /* Set container position to relative */
+  margin-top: 9vh;
+}
+.custom-btn {
+  position: absolute; /* Position the button absolutely */
+  bottom: 1.5vh; /* Adjust the distance from the bottom */
+  left: 50%; /* Position the button horizontally centered */
+  transform: translateX(-50%); /* Center the button horizontally */
+  width: 15vh;
+  background-color: #0061af;
+}
+
+.disabled-link {
+  pointer-events: none;
+  background-color: #999999;
+  border-color: #999999;
+  color: white;
+}
+
+.card-disabled {
+  /* Disable hover effects */
+  pointer-events: none;
+}
+
+.card-disabled .card-body {
+  color: grey; /* Dim text */
+}
+
+.card-disabled .card-img-top {
+  opacity: 0.5; /* Fade image */
+}
+
+.custom-btn:hover {
+  background-color: #003d6b;
+  color: #fff;
+  border-color: #003d6b;
+ 
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+

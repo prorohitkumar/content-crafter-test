@@ -1,0 +1,114 @@
+/* SideNav.css */
+
+.side-nav {
+  background-color: #ffffff;
+  color: rgb(10, 10, 10);
+  height: 100vh; /* Full height of the viewport */
+  width: 280px; /* Width of the side nav */
+  position: fixed; /* Fixed position to the side of the page */
+  z-index: 100; /* Stay on top of other content */
+  top: 80px; /* Stay at the top */
+  left: 0; /* Stick to the left side */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Padding at the top */
+  transition: width 0.5s; /* Smooth transition for the width */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.side-nav.closed {
+  width: 0;
+  overflow: hidden; /* Hide the content when nav is closed */
+}
+
+.side-nav a {
+  padding: 15px 20px; /* Padding inside the links */
+  text-decoration: none; /* No underline for links */
+  font-size: 18px; /* Comfortable font size */
+  color: rgb(0, 0, 0); /* White color text */
+  display: block; /* Display block for full-width links */
+  border-left: 4px solid transparent; /* Style for active state indication */
+  transition: border-left 0.3s ease-in-out; /* Transition for the border effect */
+}
+
+.side-nav a:hover,
+.side-nav a.active {
+  background-color: #e3e3e3; /* Slightly lighter blue for hover state */
+  border-left: 4px solid #f68413; /* Active state indication */
+}
+
+.top-bar {
+  background-color: #0061af; /* Complementary light blue color */
+  overflow: hidden;
+  height: 3.75rem; /* Reduced height for a less intrusive bar */
+  width: 100%; /* Full width of the viewport */
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top of the page */
+  left: 0; /* Stick to the left side of the page */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-btn-container button {
+  background-color: #0061af;
+  color: white;
+  padding: auto;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15%;
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+.logo p {
+  color: white; /* Set text color to white */
+  font-size: 2rem; /* Set font size */
+  font-weight: bold; /* Make text bold */
+  margin: 0; /* Adjust existing margin */
+  line-height: 60px; /* Align text vertically */
+}
+.logo {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  margin-left: 10px; /* Adjust as per requirement */
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  font-size: 30px; /* Adjust size as necessary */
+  color: white; /* Icon color */
+  user-select: none; /* Prevents text selection */
+  padding: 15px; /* Padding for easier click */
+}
+
+.overlay {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  z-index: 50; /* Behind the nav but above other content */
+  transition: display 0.5s ease-in-out; /* Transition for the overlay display */
+}
+
+.overlay.open {
+  display: block; /* Show when nav is open */
+}
+
+/* Main content padding */
+.main-content {
+  padding: 0 20px;
+  margin-top: 60px; /* Margin to clear the fixed top bar */
+  transition: margin-left 0.5s; /* Smooth transition for main content */
+}
+
+/* Apply margin when sidebar is open */
+.main-content.expand {
+  margin-left: 280px; /* Same as the sidebar width */
+}

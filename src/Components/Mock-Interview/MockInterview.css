@@ -1,0 +1,12 @@
+.mockInetrviewBody{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.react-chatbot-kit-chat-container{
+    width: 500px !important
+  }
+.react-chatbot-kit-chat-bot-message{
+    margin-left: unset;
+  }
+

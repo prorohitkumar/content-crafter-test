@@ -1,0 +1,108 @@
+.image-translate-container {
+  display: flex; /* Align items vertically in the center */
+  flex-wrap: wrap;
+}
+
+
+.header {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+
+
+}
+
+
+.back-button {
+  background: #0061af;
+  display: flex;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  width: auto; /* Set to auto to allow content to dictate the size */
+  min-width: 50px; /* Set a min-width if needed */
+  text-align: center; /* Ensures the text is centered */
+  display: inline-block; 
+  color: #ccc;/* Change display to inline-block to control width */
+}
+
+
+
+.card-containers{
+  margin-top: 5vh;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,9);  
+  width: 90vh; 
+  transition: all 0.3s ease;
+  height: 65vh  /* Optional: adds a smooth transition effect */
+}
+
+
+.image-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.uploaded-image {
+  display: flex;
+  max-width: 500px;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.upload-box{
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.buttons-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+
+
+
+.response1 {
+  border: 2px solid grey;
+  padding: 10px;
+  overflow-y: auto;
+  width: 90vh;
+  height: 65vh; 
+}
+
+.spinner-container {
+  
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,152 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+.header1 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4vh;
+
+}
+
+
+.back-button {
+  background: #0061af;
+  display: flex;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  width: auto; /* Set to auto to allow content to dictate the size */
+  min-width: 50px; /* Set a min-width if needed */
+  text-align: center; /* Ensures the text is centered */
+  display: inline-block; 
+  color: #ccc;/* Change display to inline-block to control width */
+}
+
+.blog-card-containers{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  row-gap: 3vh;
+  /* font-family: 'Roboto', sans-serif; */
+  
+  color: rgb(97, 97, 97);
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,9);  
+  width: 85vh; 
+  transition: all 0.3s ease;
+  height: 73vh  /* Optional: adds a smooth transition effect */
+}
+
+.form-container {
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-wrap: wrap;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  font-size: 2.5vh;
+  color: rgb(97, 97, 97);
+  /* font-family: 'Roboto', sans-serif; */
+ 
+}
+
+label{
+  font-weight: 400;
+}
+
+.form-container label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+.form-container label .MuiTextField-root {
+  margin: 0 20px;
+  margin-bottom: 10px;
+}
+
+#standard-basic {
+  display: flex;
+  width: 35vh;
+  height: 3vh;
+  color: rgb(97, 97, 97);
+  /* font-family: 'Roboto', sans-serif; */
+  }
+
+#outlined-number{
+  display: flex;
+  width: 10vh;
+  height: 3vh;
+  color: rgb(97, 97, 97);
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+#standard-select-level{
+  display: flex;
+  width: 10vh;
+  height: 3vh;
+  /* font-family: 'Roboto', sans-serif; */
+  color: rgb(97, 97, 97);
+  
+}
+  
+
+.buttons-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  
+}
+
+.btt-err-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.error-cont{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 55vh;
+}
+
+
+.blog-response {
+  border: 2px solid grey;
+  padding: 10px;
+  overflow-y: auto;
+  width: 100vh;
+  height: 73vh; 
+}
+
+.spinner-container {
+  justify-content: center;
+  align-items: center;
+}
+

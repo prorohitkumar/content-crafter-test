@@ -1,0 +1,199 @@
+.header-p {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  
+  /* margin-top: 1rem; */
+}
+body::-webkit-scrollbar {
+  width: 0.75rem; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #fcfcfc; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0061af; /* color of the scroll thumb */
+  border-radius: 1.25rem; /* roundness of the scroll thumb */
+  border: 0.25rem solid #fcfcfc; /* creates padding around scroll thumb */
+}
+
+.form-p {
+  width: 80%;
+  padding: 0.625rem 1.25rem;
+  /* margin-top: 2%; */
+  margin-left: 10%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fcfcfc;
+}
+
+.form-table-p {
+  display: table;
+  width: 100%;
+}
+
+.form-row-p {
+  display: table-row;
+}
+
+.form-cell-p {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% / 2);
+  box-sizing: border-box;
+  padding: 0 0.3125rem;
+  margin-top: 0.625rem;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0.3125rem 0;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  width: 100%;
+  padding: 0 0.5rem;
+  margin: 0.625rem;
+  margin-left: 0;
+  height: 2.1875rem;
+  /* border: 1px solid #c3c3c3; */
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.button-p {
+  width: 10rem;
+  height: 2.1875rem;
+  background-color: #0061af;
+  color: white;
+  justify-self: center;
+  padding: 0 2em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3125rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button {
+  background-color: #13b713;
+  width: 2.5em;
+  padding: 0;
+}
+
+.reset-btn {
+  background-color: #0061af;
+  width: 4em;
+  padding: 0;
+}
+
+.add-button {
+  /* display: inline-block; */
+  background-color: #0061af;
+  text-decoration: solid;
+  max-width: 3em;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 0.125rem;
+  /* margin-top: 30px; */
+  margin-bottom: 0.75rem;
+  margin-left: 0.125rem;
+}
+
+.remove-button {
+  text-decoration: solid;
+  max-width: 3em;
+  padding: 0 0.3125em;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  margin: 0.125rem;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+}
+.g-btn {
+  display: flex;
+  justify-content: left;
+  margin-right: 8%;
+}
+
+.gen-dwn-btn {
+  display: flex;
+  justify-content: right;
+  /* margin-right: 5%; */
+  margin-top: 0.6125rem;
+  margin-bottom: 0.5rem;
+}
+.genbtn {
+  display: flex;
+  justify-content: right;
+  margin-right: 0.125rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+.optional {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+  display: flex;
+  justify-content: right;
+  margin-right: 8%;
+  margin-bottom: 1.25rem;
+}
+
+.markdownResponse {
+  width: 75%;
+  margin: 0.625rem auto;
+  max-width: 80%;
+  margin-left: 12%;
+  height: 31.25rem;
+  padding: 2em;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  max-height: 31.25rem;
+}
+
+.sc-desc {
+  margin-top: 0.75rem;
+  /* margin-bottom: 10px; */
+}
+
+.case-study {
+  margin-top: 0.75rem;
+}
+
+.learning-objectives {
+  /* margin-top: 10px; */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .form-cell-p {
+    flex-direction: column;
+    width: 100%;
+    display: block;
+    margin-top: 0.75rem;
+  }
+}

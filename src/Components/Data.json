@@ -1,0 +1,87 @@
+{
+  "Domain": [
+    {
+      "name": "IT",
+      "subDomains": [
+        "Python",
+        "JavaScript",
+        "Java",
+        "C#",
+        "C++",
+        "Ruby",
+        "Swift",
+        "Kotlin",
+        "Go",
+        "Rust",
+        "PHP",
+        "TypeScript",
+        "Scala",
+        "Elixir",
+        "Clojure",
+        "Haskell",
+        "Lua",
+        "Perl",
+        "Dart",
+        "R"
+      ],
+      "concepts": [
+        "Variables and Data Types",
+        "Control Structures ",
+        "Functions and Methods",
+        "Object-Oriented Programming (OOP)",
+        "Functional Programming",
+        "Error Handling and Exceptions",
+        "Data Structures ",
+        "Algorithms ",
+        "Concurrency and Parallelism",
+        "Memory Management",
+        "Recursion",
+        "Design Patterns",
+        "Software Development Life Cycle (SDLC)",
+        "Version Control Systems",
+        "Testing (Unit, Integration, System)",
+        "Debugging Techniques",
+        "Database Management",
+        "Network Programming",
+        "API Design and Usage",
+        "Security Practices"
+      ]
+    },
+    {
+      "name": "HR",
+      "subDomains": [
+        "Leave",
+        "Employee Management",
+        "Training and Development"
+      ],
+      "concepts": [
+        "Employee ",
+        "Leave",
+        "New Recruitment"
+      ]
+    },
+    {
+      "name": "Retail",
+      "subDomains": [],
+      "concepts": []
+    },
+    {
+      "name": "Health Care",
+      "subDomains": [],
+      "concepts": []
+    },
+    {
+      "name": "Sales",
+      "subDomains": [],
+      "concepts": []
+    },
+    {
+      "name": "Others",
+      "subDomains": [],
+      "concepts": []
+    }
+    
+
+
+  ]
+}

@@ -1,0 +1,73 @@
+.RolePlayBody{
+    width: 100%;
+    height: 990px;
+}
+
+.headerr{
+    display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  padding-bottom: 0;
+  margin-top: 1.25rem;
+}
+
+
+.inputArea{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 9);
+padding: 20px;
+padding-left: 50px;
+padding-right: 60px;
+}
+
+.rolePlay-domain{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 32px;
+
+}
+
+.input1{
+    /* max-width: 400px; */
+    min-width: 100%;
+    margin-bottom: 15px;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.inputt{
+    margin-left: 32px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    /* background-color: red; */
+
+}
+
+.input-context{
+    margin-left: 2%;
+    margin-bottom: 10px;
+
+
+
+}
+
+.output {
+    margin-top: 1%;
+    border: 0.125rem solid #000000;
+    max-width: 80%;
+    margin-left: 10%;
+    padding: 2rem;
+  }
+  
+  .response-containerr {
+    padding: 20;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    max-height: 31.25rem;
+    scrollbar-width: 0.625rem;
+    scrollbar-color: #0061af transparent;
+  }

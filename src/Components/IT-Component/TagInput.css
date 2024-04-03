@@ -1,0 +1,140 @@
+.tags-input-container {
+  position: relative; /* Make container a positioning reference */
+
+  display: flex;
+  align-items: center; /* Align the tags and input inline */
+  flex-wrap: wrap; /* Allow items to wrap */
+  /* min-height: 25px; */
+  width: 100%; /* Full width of the parent container */
+  padding: 0;
+  border: 1px solid #ddd; /* Optional: adds a border around the container */
+  border-radius: 6px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  padding-left: 8px; /*Add some padding inside the container*/
+  /* margin-bottom: 20px; */
+}
+
+.tag-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0; /* Reset margins */
+}
+
+.tags-input-container input[type='text'] {
+  padding: 10px; /* Apply padding to the input element */
+}
+
+.tags-input-container input[type='text'] {
+  background-color: white;
+  flex: 1; /* Allows the input to fill the space */
+  border: none;
+  max-height: 35px;
+  margin: 4px 0; /* Gives a little space on top and bottom inside the container */
+  /* padding: 4px 8px; Paddings for the input */
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: rgb(97, 97, 97);
+}
+
+.tags-input-container input::placeholder {
+  justify-items: baseline;
+}
+
+.tags-input-container:hover {
+  border: 1px solid darkblue;
+  position: relative;
+}
+
+.tag-item {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin: 4px 8px 4px 0; /* Margin to separate the tags */
+  background: #007bff;
+}
+
+.tag-item button.tag-remove-button {
+  margin-left: 8px;
+  width: 16px;
+  /* height: 16px; */
+  line-height: 16px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  background: #fff;
+  color: #007bff;
+  border: 0;
+  cursor: pointer;
+  padding: 0 1px;
+}
+
+.tag-input {
+  outline: none; /* Removes the default focus outline */
+}
+
+.suggestions-list {
+  list-style: disc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  padding-left: 0;
+  width: calc(100% - 8px); /* Adjust width as per padding */
+  position: absolute;
+  z-index: 95;
+  background: white;
+  width: 20px;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.suggestions-list li:hover {
+  background-color: #f2f2f2;
+}
+
+.suggestions-container {
+  position: absolute; /* Position absolutely within container */
+  top: 100%; /* Place just below the input's bottom edge */
+  left: 0; /* Align with the left edge of the input */
+  width: 100%;
+  display: flex; /* Use flexbox to create a grid-like layout */
+  flex-wrap: wrap; /* Wrap items to the next line */
+  margin-top: 2px; /* Space between input field and suggestions */
+  /* background: transparent; Light background for the suggestions area */
+  /* border: 1px solid #ddd; Border similar to the input field */
+  border-radius: 4px; /* Rounded corners */
+  padding: 4px; /* Padding inside the suggestions container */
+  position: absolute; /* Positioning relative to the parent */
+  width: 100%; /* Match the width of the input field */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Optional: adds a subtle shadow */
+  /* z-index: 10; Ensure it's above other content */
+  z-index: 10;
+}
+
+.suggestion-tag {
+  width: 200px;
+  background: lightblue; /* Light background for each tag */
+  border-radius: 4px; /* Rounded corners for tags */
+  padding: 6px 12px; /* Padding inside each tag */
+  margin-right: 4px; /* Space between tags */
+  margin-bottom: 4px; /* Space between rows of tags */
+  font-size: 0.9em; /* Smaller font size for tags */
+  cursor: pointer; /* Change cursor to indicate clickable */
+  border: 1px solid #ccc; /* Border for tags */
+  transition: background-color 0.2s; /* Transition for hover effect */
+}
+
+.suggestion-tag:hover {
+  color: white;
+  background: darkblue; /* Darker background on hover */
+}

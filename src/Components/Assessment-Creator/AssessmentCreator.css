@@ -1,0 +1,126 @@
+body {
+  color: black;
+}
+.assessmentCreatorBody {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  padding: 0;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  padding: 0;
+  justify-content: left;
+}
+
+.Text {
+  margin: 0.625rem; /* background-color: red; */
+}
+
+.top {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  max-width: 99%;
+  padding: 1.25rem;
+}
+
+.first {
+  display: flex;
+  flex-direction: column; /* Align the text-label pairs vertically */
+  width: 100%;
+  align-items: start; /* Align items to the start of the container */
+}
+
+.Text {
+  display: flex; /* Enable flex layout */
+  flex-direction: column;
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width to fit the parent container */
+  margin-bottom: 2rem; /* Add some space between the two text-label pairs */
+  max-height: 2.5rem !important;
+}
+
+.error-message {
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 1.25rem;
+  margin-left: 2rem;
+}
+
+.top label {
+  min-width: 40%; /* Ensure all labels have the same width for alignment */
+  margin-right: 0.625rem; /* Space between label and input */
+}
+
+/* .top input[type="text"],
+.top select {
+  background-color: white;
+  margin: 2px;
+  height: 40px;
+  /* padding: 10px; */
+
+/* max-width: 400px;
+  width: calc(100% - 200px); /* Adjust width considering label and spacing */
+/* text-align: center; */
+/* } */
+
+/* .top input[type="text"]:hover,
+.top select:hover {
+  border: 2px solid darkblue;
+} */
+
+/* Add responsiveness for smaller devices */
+@media (max-width: 768px) {
+  .first {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .top label {
+    min-width: auto; /* Allow labels to fit content width */
+    width: 30%; /* Adjust label width on smaller screens for consistency */
+  }
+
+  .top input[type='text'],
+  .top select {
+    width: 70%; /* Adjust input/select width to fill remaining space */
+  }
+}
+
+.assessment-error {
+  margin-left: 0.625rem;
+  color: #ff0000;
+  margin-top: 0.3125rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.MuiMenuItem-root {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(97, 97, 97);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-message {
+  animation: fadeIn 2s;
+  text-align: center; /* Center the text horizontally */
+  font-size: 1.5rem; /* Larger text */
+  color: rgb(97, 97, 97); /* Change the color as per your design */
+  margin-top: 1.25rem; /* Add some space above the message */
+  margin-left: 27%;
+  margin-right: 27%;
+}
