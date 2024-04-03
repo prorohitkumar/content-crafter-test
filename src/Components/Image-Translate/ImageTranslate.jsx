@@ -48,7 +48,7 @@ function App() {
     formData.append('image', image);
 
     try {
-      const response = await axios.post('https://contentcrafter-python-blog.onrender.com/chat', formData, {
+      const response = await axios.post('https://contentcrafter-python-image.onrender.com/chat', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
