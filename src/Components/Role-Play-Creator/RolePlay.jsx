@@ -301,7 +301,7 @@ const RolePlay = () => {
     try {
       setIsRedirect(true);
       setIsAnsReady(false);
-      const response = await fetch('http://127.0.0.1:5000/role_play_creator', {
+      const response = await fetch('https://flask-api-volj.onrender.com/role_play_creator', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -373,7 +373,7 @@ const RolePlay = () => {
   const handleDownload = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:5000/download-docx',
+        'https://flask-api-volj.onrender.com/download-docx',
         {
           markdown_content: result,
         },
