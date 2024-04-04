@@ -78,7 +78,7 @@ function App() {
     setIsClick(true);
 
     try {
-      const response = await axios.post('https://contentcrafter-python-blog.onrender.com/blog', formData, {
+      const response = await axios.post('https://contentcrafter-python-blog-1.onrender.com/blog', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
