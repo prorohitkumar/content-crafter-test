@@ -305,7 +305,7 @@ const App = () => {
                     },
                   },
                 }}
-                title="Click to download in .md format"
+                title="Click to download in .docx format"
                 arrow
               >
                 <Button
