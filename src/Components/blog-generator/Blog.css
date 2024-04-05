@@ -9,8 +9,8 @@
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 4vh;
+  align-items: flex-end;
+  margin-top: 3vh;
 
 }
 
@@ -22,17 +22,17 @@
   border: none;
   cursor: pointer;
   padding-bottom: 8px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 4px;
   width: auto; /* Set to auto to allow content to dictate the size */
-  min-width: 50px; /* Set a min-width if needed */
+  min-width: 25px; /* Set a min-width if needed */
   text-align: center; /* Ensures the text is centered */
   display: inline-block; 
   color: #ccc;/* Change display to inline-block to control width */
 }
 
 .blog-card-containers{
-  margin-top: 3vh;
+  margin-top: 2vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -53,9 +53,9 @@
   border-radius: 4px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,9);  
-  width: 85vh; 
+  width: 49%; 
   transition: all 0.3s ease;
-  height: 73vh  /* Optional: adds a smooth transition effect */
+  height: 68vh;
 }
 
 .form-container {
@@ -72,14 +72,15 @@
 
 label{
   font-weight: 400;
+  margin-top: 10px;
+  gap: 12px;
 }
 
 .form-container label {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   position: absolute;
-  margin-bottom: 10px;
 }
 
 .form-container label .MuiTextField-root {
@@ -89,7 +90,7 @@ label{
 
 #standard-basic {
   display: flex;
-  width: 35vh;
+  width: 55vh;
   height: 3vh;
   color: rgb(97, 97, 97);
   /* font-family: 'Roboto', sans-serif; */
@@ -97,18 +98,20 @@ label{
 
 #outlined-number{
   display: flex;
-  width: 10vh;
+  width: 15vh;
   height: 3vh;
   color: rgb(97, 97, 97);
+  margin-top: 20px;
   /* font-family: 'Roboto', sans-serif; */
 }
 
 #standard-select-level{
   display: flex;
-  width: 10vh;
+  width: 18vh;
   height: 3vh;
   /* font-family: 'Roboto', sans-serif; */
   color: rgb(97, 97, 97);
+  margin-top: 20px;
   
 }
   
@@ -117,9 +120,9 @@ label{
   display: flex;
   flex-grow: 1;
   align-items: flex-end;
-  justify-content: flex-end;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  justify-content: flex-start;
+  margin-left: 78vh;
+  margin-top: 2vh;
   
 }
 
@@ -133,7 +136,7 @@ label{
 .error-cont{
   display: flex;
   margin-left: 10px;
-  margin-top: 55vh;
+  margin-top: 52vh;
 }
 
 
@@ -141,8 +144,8 @@ label{
   border: 2px solid grey;
   padding: 10px;
   overflow-y: auto;
-  width: 100vh;
-  height: 73vh; 
+  width: 49%;
+  height: 68vh; 
 }
 
 .spinner-container {
@@ -150,3 +153,10 @@ label{
   align-items: center;
 }
 
+.iicons{
+display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+}
