@@ -345,7 +345,7 @@ const App = () => {
               <Spinner />
             </div>
           )}
-          {isClick && !isLoading && <MarkdownPreview className="response-content" source={response} style={{ marginTop: '-6px' }} />}
+          {isClick && !isLoading &&  <MarkdownPreview className="response-content" source={response} style={{ marginTop: '-6px' }} />}
           {!isClick && (
             <div className="welcome">
               Welcome to Blog Crafter, your virtual assistant in crafting compelling blog content to enhance your online visibility.
