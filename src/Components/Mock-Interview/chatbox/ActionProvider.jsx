@@ -59,7 +59,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   
     // Construct message using difficulty_level
     const message = createChatBotMessage(`Great choice! You've selected a ${difficulty_level} quiz.👍 Get ready to showcase your skills and knowledge! 
-    You can take some moment to prepare. Otherwise, if you ready to begin, click Start. 🚀`, {
+    You can take some moment to prepare. Otherwise, if you are ready to begin, click Start. 🚀`, {
       widget: "startQuizBtn"
     });
   
