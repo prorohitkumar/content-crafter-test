@@ -165,7 +165,7 @@ const App = () => {
           <button className="back-button" onClick={() => navigate('/')} style={{ color: 'white' }}>
             <ArrowBackIosNewIcon />
           </button>
-          <h1>Blog Crafter</h1>
+          <h1>Blogg Crafter</h1>
         </div>
       </div>
       <div className="blog-card-containers">
